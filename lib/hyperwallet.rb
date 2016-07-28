@@ -48,7 +48,11 @@ module Hyperwallet
       response = execute_request(request_opts)
       handle_api_error(response.code, response.body) unless [200, 201].include?(response.code.to_i)
     rescue RestClient::ExceptionWithResponse => e
-      handle_api_error(e.http_code, e.http_body)
+      if rcode = e.http_code and rbody = e.http_body
+        handle_api_error(rcode, rbody)
+      else
+        raise
+      end
     end
 
     parse(response)
