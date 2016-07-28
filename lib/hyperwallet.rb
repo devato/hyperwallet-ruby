@@ -11,7 +11,8 @@ require "hyperwallet/user"
 require "hyperwallet/payment"
 
 module Hyperwallet
-  API_BASE = ENV['HYPERWALLET_API_BASE'] || "https://uat.paylution.com"
+
+  API_BASE = ENV['HYPERWALLET_API_BASE']
 
   class << self
     attr_accessor :api_user, :api_password
