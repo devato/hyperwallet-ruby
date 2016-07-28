@@ -16,7 +16,28 @@ Or install it yourself as:
 
 ## Usage
 
-WIP...
+#### Set API user/pass
+
+Create an initializer with the content:
+
+```
+Hyperwallet.api_user = ENV['HYPERWALLERT_API_USER']
+Hyperwallet.api_password = ENV['HYPERWALLERT_API_PASS']
+```
+
+## Managing Users
+
+To create a user:
+
+```
+Hyperwallet::User.create({valid: user_data})
+```
+
+To find a user:
+
+```
+Hyperwallet::User.find(user_key_id)
+```
 
 ## Development
 
