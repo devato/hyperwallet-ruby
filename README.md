@@ -23,6 +23,7 @@ Create an initializer with the content:
 ```
 Hyperwallet.api_user = ENV['HYPERWALLERT_API_USER']
 Hyperwallet.api_password = ENV['HYPERWALLERT_API_PASS']
+Hyperwallet.api_base = ENV['HYPERWALLET_API_BASE']
 ```
 
 ## Managing Users
