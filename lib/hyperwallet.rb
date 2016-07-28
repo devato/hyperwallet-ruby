@@ -8,6 +8,7 @@ require "hyperwallet/util"
 
 require "hyperwallet/hyperwallet_object"
 require "hyperwallet/user"
+require "hyperwallet/payment"
 
 module Hyperwallet
   API_BASE = "https://uat.paylution.com/rest/v"
