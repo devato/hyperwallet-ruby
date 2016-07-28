@@ -69,7 +69,7 @@ module Hyperwallet
     when 401
       raise AuthenticationError.new("Your API user or password is invalid: #{rbody.inspect}", rcode, rbody)
     else
-      raise APIError.new("API Error: #{rbody.inspect}", rcode, rbody)
+      raise APIError.new("API Error: #{rcode}", rcode, rbody)
     end
   end
 
