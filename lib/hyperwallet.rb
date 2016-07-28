@@ -48,7 +48,7 @@ module Hyperwallet
       response = execute_request(request_opts)
       handle_api_error(response.code, response.body) unless response.code == 200
     rescue RestClient::ExceptionWithResponse => e
-      if rcode = e.http_code && rbody = e.http_body
+      if rcode = e.http_code and rbody = e.http_body
         handle_api_error(rcode, rbody)
       else
         raise
@@ -69,7 +69,7 @@ module Hyperwallet
     when 401
       raise AuthenticationError.new("Your API user or password is invalid: #{rbody.inspect}", rcode, rbody)
     else
-      raise APIError.new("API Error: #{rcode}", rcode, rbody)
+      raise
     end
   end
 
