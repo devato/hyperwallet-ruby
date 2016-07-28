@@ -11,14 +11,14 @@ require "hyperwallet/user"
 require "hyperwallet/payment"
 
 module Hyperwallet
-  API_BASE = "https://uat.paylution.com/rest/v"
+  API_BASE = ENV['HYPERWALLET_API_BASE'] || "https://uat.paylution.com"
 
   class << self
     attr_accessor :api_user, :api_password
   end
 
   def self.api_url(operation='', api_version = 3)
-    "#{Hyperwallet::API_BASE}#{api_version}#{operation}"
+    "#{Hyperwallet::API_BASE}/rest/v#{api_version}#{operation}"
   end
 
   def self.request(method, url, params = {}, headers = {}, api_version = 3)
