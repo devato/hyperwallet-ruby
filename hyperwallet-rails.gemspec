@@ -1,12 +1,12 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'hyperwallet/rails/version'
+require 'hyperwallet/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "hyperwallet-rails"
-  spec.version       = Hyperwallet::Rails::VERSION
-  spec.authors       = ["tmartin314"]
+  spec.version       = Hyperwallet::VERSION
+  spec.authors       = ["Troy Martin"]
   spec.email         = ["troy@devatotech.com"]
 
   spec.summary       = %q{Rails bindings for the Hyperwallet REST API.}
@@ -26,8 +26,12 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
+  spec.add_dependency('rest-client')
+  spec.add_dependency('multi_json')
 
   spec.add_development_dependency "bundler", "~> 1.12"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "rspec-its"
+  spec.add_development_dependency "factory_girl", "~> 4.7"
 end
