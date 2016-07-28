@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["tmartin314"]
   spec.email         = ["troy@devatotech.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Rails bindings for the Hyperwallet REST API.}
+  spec.description   = %q{Rails bindings for the Hyperwallet REST API.}
+  spec.homepage      = "https://github.com/Devato/hyperwallet-rails"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
