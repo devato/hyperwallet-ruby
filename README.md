@@ -1,3 +1,8 @@
+## Info
+
+[![Build Status](https://travis-ci.org/Devato/hyperwallet-ruby.svg?branch=master)](https://travis-ci.org/Devato/hyperwallet-ruby)
+
+
 ## Installation
 
 Add this line to your application's Gemfile:
