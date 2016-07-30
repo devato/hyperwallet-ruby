@@ -26,7 +26,7 @@ describe Hyperwallet::User do
   describe ".create" do
     it "should call the api" do
       expect(api).to receive(:post)
-        .with(Hyperwallet.api_url('/users'), nil, user.to_json)
+        .with(Hyperwallet.api_url('/users'), nil, MultiJson.dump(user))
         .and_return(test_response(user))
       Hyperwallet::User.create(user)
     end
