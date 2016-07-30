@@ -19,9 +19,9 @@ Or install it yourself as:
 
 ## Usage
 
-#### Set API user/pass
+#### API Configuration using envrionment variables
 
-Create an initializer with the content:
+To configure the gem using your credentials:
 
 ```
 Hyperwallet.api_user = ENV['HYPERWALLERT_API_USER']
