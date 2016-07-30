@@ -49,9 +49,15 @@ To create a payment:
 Hyperwallet::Payment.create({valid: payment_data})
 ```
 
-# TODO
-1. Complete Payments API
-2. Add other API endpoints
+## TODO
+
+1. Add Prepaid Cards methods - WIP
+2. Add Bank Accounts methods - WIP
+3. Add Status Transitions methods - WIP
+4. Add Transfer Method Configurations methods - WIP
+5. Add Balances methods - WIP
+6. Add Programs method - WIP
+7. Add Accounts method - WIP
 
 ## Development
 

@@ -17,9 +17,9 @@ describe Hyperwallet::User do
   describe ".find" do
     it "should call the api" do
       expect(api).to receive(:get)
-        .with(Hyperwallet.api_url("/users/user_id_1"), nil, nil)
+        .with(Hyperwallet.api_url("/users/user_token_1"), nil, nil)
         .and_return(test_response(user))
-      Hyperwallet::User.find("user_id_1")
+      Hyperwallet::User.find("user_token_1")
     end
   end
 
@@ -35,9 +35,9 @@ describe Hyperwallet::User do
   describe ".update" do
     it "should call the api" do
       expect(api).to receive(:put)
-        .with(Hyperwallet.api_url("/users/user_key_1"), nil, "{\"firstName\":\"Jonathan\"}").
+        .with(Hyperwallet.api_url("/users/user_token_1"), nil, "{\"firstName\":\"Jonathan\"}").
         and_return(test_response(user))
-      Hyperwallet::User.update("user_key_1", :firstName => "Jonathan")
+      Hyperwallet::User.update("user_token_1", :firstName => "Jonathan")
     end
   end
 
