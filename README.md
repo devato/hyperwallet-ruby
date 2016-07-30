@@ -49,6 +49,9 @@ To create a payment:
 Hyperwallet::Payment.create({valid: payment_data})
 ```
 
+# TODO
+1. Complete Payments API
+2. Add other API endpoints
 
 ## Development
 
@@ -58,7 +61,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/Devato/hyperwallet-rails.
+Bug reports and pull requests are welcome on GitHub at https://github.com/Devato/hyperwallet-ruby.
 
 
 ## License
