@@ -4,14 +4,14 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'hyperwallet/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "hyperwallet-rails"
+  spec.name          = "hyperwallet-ruby"
   spec.version       = Hyperwallet::VERSION
   spec.authors       = ["Troy Martin"]
   spec.email         = ["troy@devatotech.com"]
 
   spec.summary       = %q{Rails bindings for the Hyperwallet REST API.}
   spec.description   = %q{Rails bindings for the Hyperwallet REST API.}
-  spec.homepage      = "https://github.com/Devato/hyperwallet-rails"
+  spec.homepage      = "https://github.com/Devato/hyperwallet-ruby"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -33,5 +33,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "rspec-its"
-  spec.add_development_dependency "factory_girl", "~> 4.7"
+
 end
