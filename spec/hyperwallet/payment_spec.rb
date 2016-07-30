@@ -8,7 +8,7 @@ describe Hyperwallet::Payment do
   describe ".create" do
     it "should call the api" do
       expect(api).to receive(:post)
-        .with(Hyperwallet.api_url('/payments'), nil, payment.to_json)
+        .with(Hyperwallet.api_url('/payments'), nil, payment.to_s)
         .and_return(test_response(payment))
       Hyperwallet::Payment.create(payment)
     end
