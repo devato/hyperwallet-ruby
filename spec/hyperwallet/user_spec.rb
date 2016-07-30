@@ -41,15 +41,4 @@ describe Hyperwallet::User do
     end
   end
 
-  # Not yet implemented in REST API
-  # describe ".delete" do
-  #   it "should call the api" do
-  #     expect(api).to receive(:delete)
-  #       .with(Hyperwallet.api_url('/users/user_key_1'), nil, nil)
-  #       .and_return(test_response(user))
-
-  #     Hyperwallet::User.delete("user_key_1")
-  #   end
-  # end
-
 end

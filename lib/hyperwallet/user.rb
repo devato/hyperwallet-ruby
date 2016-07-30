@@ -21,11 +21,5 @@ module Hyperwallet
       convert_to_hyperwallet_object(res, User)
     end
 
-    # Not yet implemented in REST API
-    # def self.delete(key)
-    #   res = Hyperwallet.request(:delete, "/users/#{key}", nil)
-    #   convert_to_hyperwallet_object(res, User)
-    # end
-
   end
 end
