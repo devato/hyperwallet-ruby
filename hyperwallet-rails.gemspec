@@ -8,19 +8,12 @@ Gem::Specification.new do |spec|
   spec.version       = Hyperwallet::VERSION
   spec.authors       = ["Troy Martin"]
   spec.email         = ["troy@devatotech.com"]
+  spec.required_ruby_version = '>= 2.0.0'
 
-  spec.summary       = %q{Rails bindings for the Hyperwallet REST API.}
-  spec.description   = %q{Rails bindings for the Hyperwallet REST API.}
+  spec.summary       = %q{Ruby bindings for the Hyperwallet REST API.}
+  spec.description   = %q{Ruby bindings for the Hyperwallet REST API.}
   spec.homepage      = "https://github.com/Devato/hyperwallet-ruby"
   spec.license       = "MIT"
-
-  # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
-  # to allow pushing to a single host or delete this section to allow pushing to any host.
-  # if spec.respond_to?(:metadata)
-  #   spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
-  # else
-  #   raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
-  # end
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
