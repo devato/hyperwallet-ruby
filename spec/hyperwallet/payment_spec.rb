@@ -3,7 +3,7 @@ require 'spec_helper'
 describe Hyperwallet::Payment do
 
   let!(:api) { Hyperwallet.mock_rest_client = double('RestClient') }
-  let(:payment) { TestData.payment }
+  let!(:payment) { TestData.payment }
 
   describe ".create" do
     it "should call the api" do

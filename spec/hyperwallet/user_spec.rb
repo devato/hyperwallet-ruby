@@ -3,7 +3,7 @@ require 'spec_helper'
 describe Hyperwallet::User do
 
   let!(:api) { Hyperwallet.mock_rest_client = double('RestClient') }
-  let(:user) { TestData.user }
+  let!(:user) { TestData.user }
 
   describe ".all" do
     it "should call the api" do
