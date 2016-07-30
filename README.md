@@ -17,9 +17,7 @@ Or install it yourself as:
 
     $ gem install hyperwallet-ruby
 
-## Usage
-
-#### API Configuration using envrionment variables
+## Configuration
 
 To configure the gem using your credentials:
 
