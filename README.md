@@ -3,7 +3,7 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'hyperwallet-rails'
+gem 'hyperwallet-ruby'
 ```
 
 And then execute:
@@ -12,7 +12,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install hyperwallet-rails
+    $ gem install hyperwallet-ruby
 
 ## Usage
 
@@ -26,7 +26,7 @@ Hyperwallet.api_password = ENV['HYPERWALLERT_API_PASS']
 Hyperwallet.api_base = ENV['HYPERWALLET_API_BASE']
 ```
 
-## Managing Users
+## Users API
 
 To create a user:
 
@@ -39,6 +39,15 @@ To find a user:
 ```
 Hyperwallet::User.find(user_key_id)
 ```
+
+## Payments API
+
+To create a payment:
+
+```
+Hyperwallet::Payment.create({valid: payment_data})
+```
+
 
 ## Development
 
