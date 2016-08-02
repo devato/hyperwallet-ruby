@@ -1,3 +1,4 @@
+[![Gem Version](https://badge.fury.io/rb/hyperwallet-ruby.svg)](https://badge.fury.io/rb/hyperwallet-ruby)
 [![Build Status](https://travis-ci.org/Devato/hyperwallet-ruby.svg?branch=master)](https://travis-ci.org/Devato/hyperwallet-ruby)
 
 
