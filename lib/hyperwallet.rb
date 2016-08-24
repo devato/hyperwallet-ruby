@@ -65,9 +65,9 @@ module Hyperwallet
   def self.handle_api_error(rcode, rbody)
     case rcode
     when 400, 404
-      raise InvalidRequestError.new("Your request is invalid: #{rbody.inspect}", rcode, rbody)
+      raise InvalidRequestError.new("Your request is invalid: #{rbody.message}", rcode, rbody)
     when 401
-      raise AuthenticationError.new("Your API user or password is invalid: #{rbody.inspect}", rcode, rbody)
+      raise AuthenticationError.new("Your API user or password is invalid: #{rbody.message}", rcode, rbody)
     else
       raise APIError.new("API Error: #{rbody.inspect}", rcode, rbody)
     end
