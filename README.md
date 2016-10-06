@@ -23,8 +23,8 @@ Or install it yourself as:
 To configure the gem using your credentials:
 
 ```
-Hyperwallet.api_user = ENV['HYPERWALLERT_API_USER']
-Hyperwallet.api_password = ENV['HYPERWALLERT_API_PASS']
+Hyperwallet.api_user = ENV['HYPERWALLET_API_USER']
+Hyperwallet.api_password = ENV['HYPERWALLET_API_PASS']
 Hyperwallet.api_base = ENV['HYPERWALLET_API_BASE']
 ```
 
